@@ -5,7 +5,13 @@ import React from "react";
 const list = ["eggs", "cheese", "ham", "flour", "bread"]; //use this variable
 
 const One = () => {
-  return <div>Show the items here</div>;
+  return (
+    <div>
+      {list.map((item) => (
+        <p>{item}</p>
+      ))}
+    </div>
+  );
 };
 
 export default One;
