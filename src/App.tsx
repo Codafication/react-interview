@@ -17,14 +17,16 @@ import Six from "./questions/6";
 const questions = [
   {
     instructions: [
-      `In the ./src/questions/1.tsx file, there is a 'list' variable which is currently unused. The task is to iterate this list Array and print the contained strings as <p> elements below.`,
-      `However, you should only print a string if the zero-indexed postion of the array is odd.`,
+      `There is a 'list' variable which is currently unused. Iterate this list Array and print the contained strings as <p> elements below.`,
+      `However, you should only print a string if the index of the array is odd.`,
     ],
 
     exercise: <One />,
   },
   {
-    instructions: ["Skip this, I want to make a CSS question"],
+    instructions: [
+      "Using React state, make the 'Toggle' button below toggle the visibility of the div below it.",
+    ],
     exercise: <Two />,
   },
   {
@@ -37,7 +39,7 @@ const questions = [
   {
     instructions: [
       "Currently, items are printed from the 'list' variable no matter what.",
-      "This task is to implement a text filter, using an input, that will filter the items to display only the items containing the text entered into the filter input.",
+      "This task is to implement a text filter, using an HTML input, that will filter the items to display only the items containing the text entered into the input.",
       "For example, if I type 't', it should show items Two & Three, but if I type 'th', only Three should show.",
     ],
     exercise: <Four />,
@@ -55,6 +57,7 @@ const questions = [
   {
     instructions: [
       "Currently, the 'count' state variable is displaying as zero. Increment the count variable by 1 every 1000ms (1s) and display this.",
+      "The 'simple' solutions to this can often make the number flicker once it gets higher, so make sure to watch it!",
     ],
     exercise: <Six />,
   },
