@@ -1,11 +1,7 @@
 import React from "react";
 
 const Five = () => {
-  const [count, setCount] = React.useState(0);
-  React.useEffect(() => {
-    const timer = setInterval(() => setCount(count + 1), 1000)
-    return () => clearInterval(timer)
-  })
+  const [count] = React.useState(0);
   return <div>{count}</div>;
 };
 
