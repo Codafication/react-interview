@@ -8,10 +8,10 @@ import {
 } from "react-router-dom";
 
 import One from "./questions/1";
-import OnePointOne from "./questions/1Point1";
 import Two from "./questions/2";
-import Four from "./questions/4";
-import Three from "./questions/3"; // Flexbox CSS
+import Three from "./questions/3";
+import Four from "./questions/4"; // Flexbox CSS
+import Five from "./questions/5";
 import styled from "styled-components";
 
 const cssTestSample = require("./assets/css-test.png");
@@ -48,13 +48,13 @@ const questions = [
       `Use the list from the previous question. In addition, sort this array alphabetically in reverse order`,
     ],
 
-    exercise: <OnePointOne />,
+    exercise: <Two />,
   },
   {
     instructions: [
       "Using React state, make the 'Toggle' button below toggle the visibility of the div below it.",
     ],
-    exercise: <Two />,
+    exercise: <Three />,
   },
   {
     instructions: [
@@ -62,7 +62,7 @@ const questions = [
       "Your final result should look like the image below:",
     ],
     instructionsImagePath: cssTestSample,
-    exercise: <Three />,
+    exercise: <Four />,
   },
   {
     instructions: [
@@ -70,7 +70,7 @@ const questions = [
       "This task is to implement a text filter, using an HTML input, that will filter the items to display only the items containing the text entered into the input.",
       "For example, if I type 't', it should show items Two & Three, but if I type 'th', only Three should show.",
     ],
-    exercise: <Four />,
+    exercise: <Five />,
   },
 ];
 
