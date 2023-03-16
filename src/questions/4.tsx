@@ -18,6 +18,7 @@ const Four = () => {
     <ul
       style={{
         listStyle: "none",
+        display: "flex",
       }}
     >
       <li>
