@@ -13,13 +13,11 @@ const StyledButton = styled.button`
   font-size: 24px;
 `;
 
-const Seven = () => {
+const Four = () => {
   return (
     <ul
       style={{
         listStyle: "none",
-        display: "flex",
-        justifyContent: "space-between",
       }}
     >
       <li>
@@ -38,4 +36,4 @@ const Seven = () => {
   );
 };
 
-export default Seven;
+export default Four;

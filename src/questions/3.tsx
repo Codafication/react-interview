@@ -1,14 +1,12 @@
 import React from "react";
 
-const Two = () => {
-  const [clicked, setClicked] = React.useState<boolean>(false);
-
+const Three = () => {
   return (
     <div>
-      <button onClick={() => setClicked(!clicked)}>Toggle</button>
-      {clicked && <div>Toggle showing/hiding me</div>}
+      <button>Toggle</button>
+      <div>Toggle showing/hiding me</div>
     </div>
   );
 };
 
-export default Two;
+export default Three;

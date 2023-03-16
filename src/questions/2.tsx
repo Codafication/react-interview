@@ -5,16 +5,7 @@ import React from "react";
 const list = ["eggs", "cheese", "ham", "flour", "bread"];
 
 const Two = () => {
-  return (
-    <div>
-      {list
-        .sort((a, b) => (a > b ? -1 : 1))
-        // OR sort().reverse()
-        .map((item) => (
-          <p>{item}</p>
-        ))}
-    </div>
-  );
+  return <div>Show the items here</div>;
 };
 
 export default Two;
