@@ -10,7 +10,7 @@ import {
 import One from "./questions/1";
 import Two from "./questions/2";
 import Three from "./questions/3";
-import Four from "./questions/4"; // Flexbox CSS
+import Four from "./questions/4";
 import Five from "./questions/5";
 import styled from "styled-components";
 
@@ -45,16 +45,10 @@ const questions = [
   },
   {
     instructions: [
-      `Use the list from the previous question. In addition, sort this array alphabetically in reverse order`,
+      "Using React state, make the 'Toggle' button below toggle the visibility of the div below it.",
     ],
 
     exercise: <Two />,
-  },
-  {
-    instructions: [
-      "Using React state, make the 'Toggle' button below toggle the visibility of the div below it.",
-    ],
-    exercise: <Three />,
   },
   {
     instructions: [
@@ -62,13 +56,23 @@ const questions = [
       "Your final result should look like the image below:",
     ],
     instructionsImagePath: cssTestSample,
-    exercise: <Four />,
+    exercise: <Three />,
   },
   {
     instructions: [
       "Currently, items are printed from the 'list' variable no matter what.",
       "This task is to implement a text filter, using an HTML input, that will filter the items to display only the items containing the text entered into the input.",
       "For example, if I type 't', it should show items Two & Three, but if I type 'th', only Three should show.",
+    ],
+    exercise: <Four />,
+  },
+  {
+    instructions: [
+      "Currently, items are printed from the 'list' variabe. This task is to fetch these Star Wars planets from a REST API instead.",
+      "A GET request to https://swapi.dev/api/planets will return these planets in the results, display those results below instead of the hardcoded 'list' variable.",
+      "Use 'fetch' to do this and do not install any additional libraries, the documentation for this can be found here: https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch.",
+
+      "Ensure that the REST API is only called ONCE when the page is loaded, and show the text 'loading...' while waiting for a response.",
     ],
     exercise: <Five />,
   },
