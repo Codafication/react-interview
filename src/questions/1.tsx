@@ -5,7 +5,16 @@ import React from "react";
 const list = ["eggs", "cheese", "ham", "flour", "bread"]; //use this variable
 
 const One = () => {
-  return <div>Show the items here</div>;
+  list.forEach((i) => {});
+  return (
+    <div>
+      {list.map((i) => {
+        if (list.indexOf(i) % 2 !== 0)
+          return <div>{i}</div>;
+      })}
+      Show the items here test
+    </div>
+  );
 };
 
 export default One;
