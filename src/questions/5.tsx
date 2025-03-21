@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 const items = [
   "Tatooine",
@@ -13,10 +13,37 @@ const items = [
   "Kamino",
 ];
 
+
+
 const Five = () => {
+  const [loaded, setLoaded] = useState<boolean>(false);
+  async function getData() {
+    
+    const url = "https://swapi.dev/api/planets";
+
+    try {
+      const response = await fetch(url);
+      if (!response.ok) {
+        throw new Error(`Response status: ${response.status}`);
+      }
+
+      const json = await response.json();
+      return json;
+    } catch (e) {
+      console.error(e);
+    }
+  }
+
+  useEffect(() => {
+    const data = getData();
+    setLoaded(true)
+  }, []);
+
   return (
     <div>
-      {items.map((item, i) => {
+      {!loaded && <div>loading</div>}
+      
+      {loaded && items.map((item, i) => {
         return <p key={i}>{item}</p>;
       })}
     </div>
