@@ -12,7 +12,6 @@ const One = () => {
         if (list.indexOf(i) % 2 !== 0)
           return <div>{i}</div>;
       })}
-      Show the items here test
     </div>
   );
 };
