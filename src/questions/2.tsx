@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 
 const Two = () => {
-  const [visible, setVisible] = useState(true);
+  const [visible, setVisible] = useState<boolean>(true);
   const handleVisibility = () => {
-    setVisible(!visible)
+    setVisible(!visible);
   };
 
   return (
